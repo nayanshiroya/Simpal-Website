@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 36%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.nav-list {
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 20px 18px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-list li a:hover {
+    color: gray;
+}
+
+.nav-right {
+    width: 30%;
+    text-align: right;
+    padding: 0 14px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.backgruond {
+    background: rgb(0, 0, 0, 0.5)url("./img/dog-img.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.firstsection {
+    height: 80vh;
+}
+
+.main-box {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    margin: auto;
+}
+
+.first-half {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.second-half {
+    width: 50%;
+}
+
+.second-half img {
+    width: 65%;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+.text-big {
+    font-size: 30px;
+}
+
+.text-small {
+    font-size: 15px;
+}
+
+.btn {
+    margin: 11px 0px;
+    padding: 5px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.btn-dark {
+    border: 2px solid rgb(0, 0, 0);
+    color: black;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    max-width: 75%;
+    margin: auto;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.secleft {
+    flex-direction: row-reverse;
+}
+
+
+.paras {
+    padding: 0 21px;
+    text-align: justify;
+    width: 80%;
+}
+
+.thumbnail {
+    width: 17%;
+    margin: 0 47px;
+}
+
+.thumbnail img {
+    width: 155px;
+    border: 2px solid black;
+    border-radius: 11px;
+    padding: 1px;
+}
+
+
+.suntage {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+
+.contact {
+    background-color: aliceblue;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.form {
+    margin: auto;
+    width: 65%;
+}
+
+.form-input {
+
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+
+
+.line {
+    width: 23px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 3px;
+
+}
+
+.burger {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.9 ease-in-out;
+        height: 500px;
+    }
+
+    .nav-right {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 5%;
+    }
+
+    .hclass {
+        height: 45px;
+    }
+
+    .vclass {
+        visibility: hidden;
+    }
+
+    .main-box {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .second-half img {
+        width: 37%;
+        margin-top: 54px;
+    }
+
+    .second-half {
+        width: 33%;
+
+    }
+
+    .section {
+        flex-direction: column-reverse;
+        text-align: justify;
+    }
+
+    .text-big {
+        word-break: break-all;
+
+
+    }
+
+    .text-small {
+        word-break: break-all;
+
+
+    }
+
+    .buttons {
+        text-align: center;
+
+    }
+
+    .thumbnail img {
+        display: block;
+        margin: auto;
+    }
+
+    .thumbnail {
+        width: 50%;
+        margin: 21px 50px;
+
+    }
